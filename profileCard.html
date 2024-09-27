@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+.dot {
+  height:100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.body {
+  background-color: rgb(101, 225, 184);
+  height: 100%;
+}
+.container {
+  display:grid;
+  border:solid;
+  border-color: green;
+  height: 600px;
+  grid-template-columns: 1fr 1fr 1 fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1 fr 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+
+}
+.card {
+  
+  grid-area: 3/3/span 1/span 1;
+   padding: 30px;
+  border-width: 1px;
+   border-style:solid;
+   border-color: grey;
+   max-width: 300px;
+   margin: auto auto;
+   text-align: center;
+  }
+  
+  .title {
+    align-items: start;
+    color: grey;
+    font-size: 18px;
+  }
+   a {
+    font-size: 20px;
+    color: black;
+  }
+  
+  a:hover {
+    color:blue;
+    opacity: 0.4;
+  }
+</style></head>
+<body>
+<div class="container">
+<div class="card">
+  <div style="text-align:center">
+    
+    <span class="dot"></span>
+    
+  </div>	
+  
+  <h1>John Doe</h1>
+  <p class="title">Web Developer</p>
+   <a href="#"><i class="fa fa-facebook"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  
+  
+</div></div>
+</body>
+</html>
